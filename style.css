@@ -1,0 +1,1341 @@
+/*
+@import url("http://www.google.com/css/inlay.css");
+@import url("http://www.google.com/css/modules/buttons/g-button-chocobo.css");
+*/
+
+html {
+  background: #fff;
+}
+
+body {
+  font-size: 13px;
+  font-family: Arial;
+  margin: 0 10px;
+  padding: 0;
+}
+
+body a {
+  color: #3366CC;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+.page {
+  margin: 0 auto 25px auto;
+  width: 960px;
+}
+
+.dataman .page,
+.dataman .header.border {
+  width: 100%;
+}
+
+.dataman .frame {
+  border: 4px solid #bcf;
+  padding: 10px;
+}
+
+.dataman .breadcrumb {
+  background: #bcf;
+  color: #000;
+  padding: 8px 0 2px 10px;
+  height: auto;
+}
+
+.dataman .breadcrumb a {
+  color: #00C;
+  text-decoration: underline;
+}
+
+.dataman .version {
+  color: #999;
+  font-size: 11px;
+  padding: 0 10px 0 0;
+}
+
+.dataman .version.prod span {
+  color: red;
+}
+
+.header.border {
+  margin: 0 auto 25px auto;
+  width: 960px;
+}
+
+.header {
+  height: 40px;
+}
+
+.header h1 {
+  color: #888;
+  float: left;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+.header h1 img {
+  border: 0;
+  float: left;
+  margin: -15px 15px 0 0px;
+}
+
+.header form {
+  float: right;
+  margin: 20px 0px 0 0;
+}
+
+.header form input[type=text] {
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .2em;
+  width: 12em;
+}
+
+/* TODO(jeremydw): Remove external dependencies. */
+.mainmenu {
+  background: url('http://www.google.com/mobile/images/mgc3/toolbarbg.png') repeat-x;
+  height: 45px;
+  margin-bottom: -10px;
+}
+
+.mainmenu ul {
+  height: 33px;
+  list-style: none;
+  margin: 0 0 0 25px;
+  padding: 0;
+}
+
+.mainmenu ul li {
+  background: url('http://www.google.com/mobile/images/mgc3/mgc-toolbar-item-bg.png') top left no-repeat;
+  float: left;
+  font-size: 16px;
+  height: 33px;
+}
+
+.mainmenu ul li a {
+  color: #fff;
+  display: block;
+  line-height: 33px;
+  padding: 0 15px 0;
+  text-decoration: none;
+  outline: none;
+}
+
+.mainmenu ul li a:hover {
+  text-shadow:1px 1px 4px rgba(255,255,255,0.75);
+}
+
+.mainmenu ul li a:active {
+  text-shadow:1px 1px 4px rgba(255,255,255,1);
+}
+
+.content {
+  margin: 15px auto 0px;
+}
+
+.footer {
+  color: #555;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.footer.small {
+  margin-top: -5px;
+  margin-bottom: 25px;
+  font-size: 11px;
+}
+
+ul.phonelist li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.phonelist li .name a {
+  color: #1111CC;
+  text-decoration: none;
+}
+
+ul.phonelist li.list .name a img {
+  border:0;
+}
+
+.home img.withgoogle,
+.phonedetail img.withgoogle {
+  margin-left: 5px;
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+img.withgoogle {
+  margin: -5px 3px auto;
+  vertical-align: middle;
+}
+
+ul.phonelist li img.withgoogle {
+  margin-top: -5px;
+}
+
+ul.phonelist .name a:visited {
+  color: #551A8B;
+}
+
+ul.phonelist li.list img.phone {
+  display: block;
+  float: left;
+  height: 100px;
+  margin: 0 20px 0 0;
+  width: 100px;
+}
+
+ul.phonelist li.list .buy-from div.title {
+  color: #555;
+  font-size:11px;
+  margin:0 0 5px 0;
+}
+
+ul.phonelist li.list .buy-from {
+  text-align:center;
+}
+
+ul.phonelist li.list .buy-from .inline-compare-button {
+  max-width: 100%;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+.phonedetail .buy-from {
+  margin: -3px 0 0 20px;
+  display: inline-block;
+  position: relative;
+}
+
+ul.phonelist li.list .buy-from img,
+.phonedetail .buy-from img {
+  border: 0;
+  width: 70px;
+  height: 35px;
+  float: none;
+  padding: 3px;
+  display: inherit;
+  margin: 0;
+}
+
+.browse .stuck {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.browse ul.phonelist li.grid {
+  float: left;
+  height: 240px;
+  margin: 0 10px 15px 30px;
+  text-align: center;
+  overflow: hidden;
+  width: 235px;
+}
+
+.browse ul.phonelist li.grid .name {
+  display: block;
+  margin:0 0 5px 0;
+}
+
+.browse ul.phonelist li.grid .image  {
+  display:block;
+  text-align:center;
+  margin:0 0 5px 0;
+}
+.browse ul.phonelist li.grid .image img {
+  width:180px;
+  height:180px;
+  border: 0;
+  outline: 0;
+}
+
+.browse ul.phonelist li.grid .inline-compare-true {
+  color: #ddd;
+  outline: none;
+}
+
+.browse ul.phonelist li.grid .inline-compare-button:hover {
+  text-decoration: none;
+}
+
+.browse ul.phonelist li.grid .inline-compare-button {
+  font-size: 11px;
+}
+
+ul.phonelist li.list .buy-from,
+.phonedetail .buy-from a {
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+.phonedetail .buy-from a img {
+  margin: 3px 0 0 0;
+  border: 1px solid #fff;
+}
+
+.phonedetail .buy-from a:hover img {
+  margin: 3px 0 0 0;
+}
+
+ul.phonelist li.list .buy-from a img {
+  border: 1px solid #fff;
+}
+
+ul.phonelist li.list .buy-from a:hover {
+  text-decoration: none;
+}
+
+ul.phonelist li.list .buy-from a:active img,
+.phonedetail .buy-from a:active img {
+  border-color:#999 #CCC #CCC #999;
+}
+
+ul.phonelist li.list .buy-from a:hover img,
+.phonedetail .buy-from a:hover img {
+  border-color:#CCCCCC #999999 #999999 #CCCCCC;
+  border-style:solid;
+  border-width:1px;
+}
+
+ul.phonelist li.list .learnmore a {
+  margin-right: 15px;
+}
+
+ul.phonelist li.list .learnmore a.buy {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sidebar-compare form {
+  margin:0 0 3px 0;
+}
+
+.sidebar-compare .title {
+  height: 40px;
+}
+.sidebar-compare ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.sidebar-compare ul li {
+  display: block;
+  margin:0 0 10px 0;
+}
+
+.sidebar-compare ul li a {
+}
+
+.sidebar-compare ul li a:hover {
+  text-decoration: none;
+}
+
+.sidebar-compare ul li a.remove {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url('http://www.google.com/phone/static/images/x.png');
+  background-position:0 -16px;
+  margin:0 0 0 108px;
+  position: absolute;
+}
+
+.sidebar-compare ul li a.remove:hover {
+  background-position:0 0px;
+}
+
+.sidebar-compare ul li.empty {
+  height: 100px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  width: 100px;
+}
+
+.sidebar-compare ul li.full img,
+.compare img.full {
+  border:1px solid #5983db !important;
+}
+
+.sidebar-compare ul li img {
+  display: inline-block;
+  width: 73px;
+  height: 73px;
+  padding: 13px;
+  border: 1px solid #d6deee;
+  margin: 0;
+}
+
+.home h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home .banner {
+  background: #f5f7fd;
+  border: 1px solid #d6deee;
+  margin: 20px 0 30px 0;
+  padding: 10px 0 0;
+}
+
+.home .banner .banner-image {
+  margin: -10px 0 0 13px;
+  position: absolute;
+}
+
+.home .banner .overflow-image {
+  margin: -55px 0 0 30px;
+  position: absolute;
+}
+
+.home .banner h3 {
+  font-family: Droid Sans;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.home .banner .right-content p {
+  font-size:16px;
+}
+
+.home .banner .right-content {
+  float: right;
+  height: 180px;
+  margin: 10px 20px;
+  padding: 0 20px 0 0;
+  width: 340px;
+}
+
+.compare table.slides div.item {
+  border-right: 1px solid #d2dbed;
+}
+
+.compare table.slides td {
+  width: 33%;
+}
+
+.compare table.slides td.last div.item {
+  width: 270px;
+  margin: 0;
+}
+
+.home .carousel  {
+  margin:0 auto;
+  width:843px;
+  height: 180px;
+  position: relative;
+}
+
+.home .carousel .items  {
+  overflow:hidden;
+  height: 162px;
+  width: 843px;
+  position: absolute;
+  border-right: 1px solid #d6deee;
+}
+
+.compare div.item,
+.home .carousel .items div.item {
+  background: #f5f7fd;
+  border: 1px solid #d6deee;
+  border-right: 0;
+  padding: 15px;
+  float: left;
+  height: 130px;
+  width: 250px;
+}
+
+.compare div.item {
+  float: inherit;
+  width: auto;
+}
+
+.home .carousel .items .clip {
+  position: absolute;
+  width: 890px;
+}
+
+.home .carousel .items div.item div.phone-image,
+.compare div.phone-image {
+  float: left;
+  height: 120px;
+  margin: 0 15px 0 0;
+  width: 90px;
+}
+
+.home .carousel .items div.item div.phone-image img,
+.compare div.phone-image img {
+  display: block;
+  height: 70px;
+  width: 70px;
+  padding:10px;
+  border: 0;
+  background:#fff;
+  border: 1px solid #d6deee;
+}
+
+.browse .navbar .picker {
+  display: none;
+  margin: 0 0 10px 0;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  margin:0 0 13px 0;
+}
+
+.navbar ul li a {
+  color: #11C;
+}
+
+.navbar ul li.active a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar ul li {
+  line-height: 1.4em;
+}
+
+.navbar ul li.picker {
+  font-weight: bold;
+}
+
+.navbar img {
+  border: 0;
+  padding: 1px 3px;
+  vertical-align: middle;
+}
+
+.browse .navbar-disclaimer {
+  color: #555;
+  font-size: 11px;
+  padding: 0 20px 0 0;
+}
+
+.browse .navbar fieldset {
+  border: 0;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.browse .layout a {
+  background: url('http://www.google.com/phone/static/images/listgrid.png');
+  width: 19px;
+  height: 19px;
+  border: 1px solid #7081ab;
+  text-indent: -999em;
+  overflow: none;
+  outline: none;
+}
+
+.browse .layout a.list-selector.active {
+  background-position: 19px 0;
+}
+
+.browse .layout a.list-selector {
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-position: 38px 0;
+}
+
+.browse .layout a.grid-selector.active {
+  background-position: 57px;
+}
+
+.browse .layout a.grid-selector {
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-position: 0 0;
+}
+
+.browse .layout a:hover {
+  text-decoration: none;
+  border-color: #555;
+}
+
+.browse .layout a {
+  display: inline-block;
+  margin-left: -1px;
+}
+
+.browse .sortby,
+.browse .layout {
+  margin-top: 1px;
+  height: 40px;
+}
+
+.browse .sortby {
+  float: right;
+}
+
+.browse .layout {
+  float: right;
+}
+
+.browse .sortby a.active {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.browse .layout a.active {
+  color: #000;
+}
+
+.phonedetail .phonedetail-container {
+  background: url('http://www.google.com/phone/static/images/container.border.png') top right no-repeat;
+  margin: 0 20px 0 0;
+  min-height: 460px;
+  padding: 0 20px 0 0;
+}
+
+.browse .phonelist-container {
+  background: url('http://www.google.com/phone/static/images/container.border.png') top right repeat-y;
+  margin: 0 20px;
+  min-height: 450px;
+  padding: 0 20px 0 15px;
+}
+
+.browse .phonelist-border-left {
+  background: url('http://www.google.com/phone/static/images/container.border.png') top left repeat-y;
+}
+
+.browse ul.phonelist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.browse ul.phonelist li {
+  position: relative;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+#names-list li.list .name {
+    float: left;
+}
+
+#names-list li.list .description {
+    float: left;
+    padding-left: 20px;
+    font-size: 10px;
+    margin: 6px;
+}
+
+.browse ul.phonelist li.list .name strong {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.browse div.pagenav {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.browse div.pagenav a {
+  margin: 0;
+  padding: 8px 6px;
+}
+
+.browse div.pagenav a.nextprev.hidden {
+  visibility: hidden;
+}
+
+.browse div.pagenav a.nextprev {
+  color: #1111CC;
+  font-weight: bold;
+  margin: 0 20px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.browse div.pagenav a.active {
+  color: #000;
+  cursor: default;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Page: Phone Detail */
+
+.phonedetail .thumbs  {
+  margin:0 0 15px 0;
+}
+
+.phonedetail .thumbs span.thumb {
+}
+
+.phonedetail .thumbs span.thumb img {
+  border: 1px solid #d2dbed;
+  padding: 6px;
+  height: 30px;
+  margin: 0 9px 0 0;
+  width: 30px;
+}
+
+.home .carousel .items img:hover {
+  border:1px solid #5983db !important;
+}
+
+.phonedetail .thumbs span.thumb img:hover,
+.phonedetail .thumbs span.thumb img {
+  cursor: pointer;
+}
+
+.phonedetail .thumbs .label {
+  color: #555;
+  font-size: 11px;
+  padding: 0;
+  display: block;
+  position: relative;
+  vertical-align: top;
+  margin:0 0 10px 0;
+}
+
+.phonedetail .thumbs span.active-border {
+  display: none;
+}
+
+.phonedetail .thumbs span.active img {
+  border-color: #5983DB;
+}
+
+.phonedetail .thumbs img.large {
+  max-width: 350px;
+  margin:0 0 5px 0;
+}
+
+.home .phone-banner .g-button {
+  background-color: #e0ecff;
+  width: inherit;
+}
+
+.home .phone-banner .banner-image {
+  margin: -55px 0 0 0;
+  position: absolute;
+  z-index:0;
+}
+
+.home .phone-banner {
+  padding: 40px 0 0 0;
+  height: 260px;
+}
+
+.home .phone-banner .caption a {
+  font-weight: bold;
+}
+
+.home .phone-banner .caption {
+  z-index:1;
+  width: 90px;
+  margin: 2px 0 0 200px;
+  position: absolute;
+}
+
+.home .subtitle h3,
+.compare .title h2,
+.phonedetail .title h2 {
+  float: left;
+}
+
+.home .subtitle h3 {
+  margin-top: 0;
+}
+
+.home .subtitle span,
+.compare .title span,
+.phonedetail .title span {
+  display: block;
+  float: left;
+  padding: 4px 0 0 20px;
+}
+
+div.breadcrumb,
+div.breadcrumb {
+  color: #555;
+  height: 30px;
+}
+
+.phonedetail .title button {
+  float: right;
+}
+
+.phonedetail .description {
+  line-height: 1.3em;
+  margin: 0px 30px 15px 0;
+  width: 270px;
+}
+
+.phonedetail .bbb {
+  margin:0 30px 5px 0;
+  overflow: visible;
+}
+
+.phonedetail .bbb .g-button-basic {
+  float: left;
+  display: inline-block;
+  font-size: 10px !important;
+  width: auto;
+}
+
+.phonedetail .buy a {
+  margin: 0px 30px 20px 30px;
+  font-weight: bold;
+}
+
+.compare table.details,
+.phonedetail table {
+  border-collapse: collapse;
+  border-top: 1px solid #ebeff9;
+  width: 100%;
+  margin:0 0 15px 0;
+}
+
+.compare table.details th,
+.phonedetail table th {
+  text-align: left;
+}
+
+.compare table.details th,
+.compare table.details td,
+.phonedetail table th,
+.phonedetail table td {
+  border-bottom: 1px solid #ebeff9;
+  padding: 4px 6px;
+  vertical-align: top;
+}
+
+.compare table.details thead th,
+.compare table.details thead td {
+  border-bottom: 0 !important;
+}
+
+.compare table.details th,
+.phonedetail table th {
+  color: #555;
+  font-weight: normal;
+  width: 160px;
+}
+
+.phonedetail table thead th,
+.phonedetail table thead td,
+.compare table.details th.strong {
+  padding-left: 5px;
+  font-weight: bold !important;
+  background: #ebeff9;
+  color: black;
+}
+
+.compare table.details th {
+  width: 20%;
+}
+
+.compare table.details .medium {
+  text-align:center;
+}
+
+.compare table.details .medium img {
+  border: 0 !important;
+  width: 150px;
+  height: 150px;
+}
+
+.compare table.details td {
+  width: 25%;
+  padding-right: 15px;
+}
+
+.compare table.buyfrom p {
+  margin: 3px 0;
+}
+
+.compare table.buyfrom p.strong {
+  color:#555;
+}
+
+.compare table.buyfrom a {
+  font-weight: bold;
+}
+
+.compare table.buyfrom {
+  text-align: center;
+  margin: 0px 0;
+}
+
+.compare table.slides {
+  border-collapse: collapse;
+  margin: 0px 0 20px 0;
+  width: 100%;
+}
+
+.compare table.slides th {
+}
+
+.dataman table {
+  border-collapse: collapse;
+  border-top: 1px solid #d2dbed;
+  width: 100%;
+  margin:0 0 20px 0;
+  border-left: 1px solid #d2dbed;
+  border-right: 1px solid #d2dbed;
+}
+
+.dataman table .meta {
+  color: #999;
+  font-size: 11px;
+}
+
+.dataman table thead tr {
+  font-size: 11px;
+}
+
+.dataman table tr.bad-data {
+  background: #fee3e2;
+}
+
+.dataman table td,
+.dataman table th {
+  border-bottom: 1px solid #d2dbed;
+  padding: 4px;
+  vertical-align: top;
+}
+
+.dataman .header form {
+  margin-top: 15px;
+}
+
+.dataman img.dataman-image {
+  max-width:100px;
+}
+
+.dataman table tbody tr:hover td,
+.dataman table tbody tr:hover th {
+  background: #f6f9ff;
+}
+
+.dataman table.form th {
+  font-weight:normal;
+  text-align:left;
+  width:250px;
+}
+
+.dataman table.form textarea {
+  height: 80px;
+  width: 95%;
+}
+
+.dataman table.form textarea[disabled] {
+  background: #efefef;
+}
+
+.dataman table thead tr {
+  background: #e8eef7;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dataman table tfoot tr {
+  background: #efefef;
+}
+
+.dataman table input[type=text] {
+  border: 1px dotted #ccc;
+  font: 13px 'Arial';
+  padding: 3px 5px;
+  width: 98%;
+}
+
+.dataman table input[type=text]:hover {
+  cursor: pointer;
+}
+
+.dataman table input[type=text]:active,
+.dataman table input[type=text]:hover {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+}
+
+.dataman h2 {
+  background: #E3E9FF;
+  padding: 7px 10px;
+  margin: -10px -10px 15px -10px;
+  font-weight: bold;
+}
+
+.dataman .example span {
+  color:#555;
+  clear:both;
+  display:block;
+  font-style:italic;
+  padding:3px;
+}
+.dataman .example img {
+  border: 1px solid #d2dbed;
+}
+.dataman .example ul {
+  margin:5px 0;
+  padding:0 15px;
+}
+.dataman input[type=text] {
+  font-size:13px;
+}
+
+.dataman .icon {
+  float: left;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -999px;
+  outline: none;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 1px solid #999;
+  border-top-color: #d4d8de;
+  border-left-color: #d4d8de;
+  line-height: 0;
+  margin:0 5px 0 0;
+}
+
+.dataman .icon.preview {
+  background:#fff url(http://www.google.com/phone/static/images/binoculars.png) no-repeat 2px 1px;
+}
+
+.dataman .icon.delete {
+  background:#fff url(http://www.google.com/phone/static/images/delete.gif) no-repeat 5px 5px;
+}
+
+.dataman .icon:hover {
+  border-color: #3366CC;
+}
+
+.dataman ul.nav li span.head {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.dataman ul.nav, .dataman ul.nav ul {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dataman ul.nav li a {
+  display: block;
+  color: #000;
+  padding: 3px 11px;
+  cursor: pointer !important;
+  -webkit-user-select: none;
+}
+
+.dataman ul.nav li a:hover {
+  text-decoration: none;
+}
+
+.dataman ul.nav li.active a {
+  background: #bcf;
+}
+
+.phonedetail .flash {
+  margin-bottom: 15px;
+}
+
+.flash {
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  background: #f3f7fc;
+  padding: 3px;
+}
+
+.flash.notice.multiple {
+  margin-bottom: 15px;
+}
+
+.flash.notice {
+  text-align: center;
+  padding:5px 7px;
+  background: #fcf5c3;
+}
+
+.flash.errors {
+  background: #ffc8c8;
+}
+
+.flash.promo {
+  border: 1px solid #d2dbed;
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+
+.browser-loading {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.dataman table .errors ul {
+  color: red;
+}
+
+.g-scroller-controls a {
+  outline: none;
+  display:block;
+  width:20px;
+  font-size:15px;
+  height:100px;
+  cursor:pointer;
+  padding:0;
+  position: absolute;
+  border:1px solid #dee5f2;
+  text-align:center;
+  line-height:100px;
+  margin:22px 0 0 0;
+  border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  -moz-box-shadow:1px 1px 1px #dfdfdf;
+  -webkit-box-shadow:1px 1px 1px #dfdfdf;
+}
+.g-scroller-controls a.disabled-next,
+.g-scroller-controls a.disabled-prev {
+  color:#999;
+  line-height:100px !important;
+  border:1px solid #dee5f2;
+}
+.g-scroller-controls a:active {
+  line-height:103px;
+}
+.g-scroller-controls a:hover {
+  border:1px solid #5983db;
+  text-decoration: none;
+}
+.g-scroller-previous {
+  left: -33px;
+}
+.g-scroller-next {
+  right: -33px;
+}
+.g-scroller-next:hover {
+  background-position:-74px 0 !important;
+}
+.g-scroller-previous:hover {
+  background-position:-50px 0 !important;
+}
+
+.g-button div {
+  background-image:url(http://www.google.com/phone/static/images/g-button-chocobo-nobox-1.gif);
+}
+.g-button div span span a {
+  background-image:url(http://www.google.com/phone/static/images/g-button-chocobo-nobox-2.gif);
+}
+.g-button div span {
+  background-image:url(http://www.google.com/phone/static/images/g-button-chocobo-nobox-1.gif);
+}
+.g-button div span span {
+  background-image:url(http://www.google.com/phone/static/images/g-button-chocobo-nobox-1.gif);
+}
+
+a.print {
+  background: #efefef url(http://www.google.com/phone/static/images/print.png) 6px no-repeat;
+  display: inline-block;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  outline: 1px solid #e7e7e7;
+  padding: 4px 10px 4px 30px;
+  color: black;
+}
+
+a.print:hover {
+  text-decoration: none;
+}
+
+a.print:active {
+  background-color:#cccccc;
+}
+
+.withgoogle {
+  vertical-align: middle;
+}
+
+.browser-tooltip.allphones {
+  margin-top: -50px;
+}
+
+.browser-tooltip.withgoogle {
+  margin-top: -35px;
+}
+
+.browser-tooltip {
+  position: absolute;
+  background: #fff;
+  display: none;
+  width: 350px;
+  border-radius: 3px;
+  -moz-border-radius: 2px;
+  margin-left: 120px;
+  -webkit-border-radius: 2px;
+  border: 1px solid #dfdfdf;
+  -moz-box-shadow: 3px 3px 3px #dfdfdf;
+  line-height: 20px;
+  -webkit-box-shadow: 3px 3px 3px #dfdfdf;
+  text-decoration: none;
+  color: #555;
+  padding: 10px 12px;
+  z-index: 3;
+}
+
+
+/* Custom Overrides */
+
+.header {
+	height: 80px;
+}
+
+.header h1 {
+    float: none;
+    text-align: center;
+}
+
+.browse .phonelist-container {
+	margin: 0 0 0 20px;
+}
+
+#navbar-container ul li {
+	display:inline-block;
+        padding: 0 3px;
+}
+
+.section-title {
+	background-color:#E5ECF9;
+	border-top:1px solid #3366CC;
+	font-size:1em;
+	margin:0;
+	padding:0.1em 0;
+	white-space:nowrap;
+	width:100%;
+	word-wrap:normal;
+}
+
+.section-title h4 {
+    margin: 5px 0;
+}
+
+#sidebar-compare {
+	text-align: right;
+}
+
+#names-list .buy-from {
+	display: none;
+}
+
+#names-list li:hover .buy-from {
+	display: block;
+}
+
+.browse ul.phonelist li.list {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    margin: 0 0 5px 0;
+    -moz-border-radius: 3px;
+}
+
+.browse ul.phonelist li.list:hover {
+    border: 1px solid #667788;
+    background-color: #E5ECF9;
+}
+
+.clear {
+    clear: both;
+    padding: 2px;
+}
+
+.pagination {
+    margin: 9px 0pt;
+    height: 20px;
+}
+.pagination div {
+    border: 1px solid #667788;
+    padding: 2px 6px;
+    font-size: 11px;
+}
+.pagination .prev {
+    float: left;
+}
+
+.pagination .next {
+    float: right;
+}
+
+.pagination .export {
+    display:inline-block;
+    margin:auto auto auto 63px;
+    text-align:center;
+    width: auto;
+}
+
+.gender {
+    margin: 20px 0 0 0;
+}
+
+.gender .sortby {
+    height: 20px;
+    float: none;
+}
+
+#star td, #star th {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    margin: 0 0 5px 0;
+   
+}
+
+#star th, #star tr:hover {
+    border: 1px solid #667788;
+    background-color: #E5ECF9;
+}
+
+#star th {
+    background-color: #E5ECF9;
+     -moz-border-radius: 0px;
+}
