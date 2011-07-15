@@ -3,4 +3,12 @@ Live example: http://www.peyar.in
 Techologies used were CodeIgniter PHP Framework, Mysql, Google Transliterate controls
 Mysql database structure is available in db_structure.sql
 
+Installation steps:
+
+Import db_structure.sql to a Mysql database
+Provide database connection info in /system/application/config/database.php
+Open file /system/application/config/config.php and substitute $config['base_url']
+Upload files to web server
+
+
 Karthik Murugan | karthik@yemkay.com | http://yemkay.com | @yemkay
