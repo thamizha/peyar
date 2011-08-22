@@ -10,5 +10,9 @@ Provide database connection info in /system/application/config/database.php
 Open file /system/application/config/config.php and substitute $config['base_url']
 Upload files to web server
 
+License:
+Code under GPL3 (http://www.gnu.org/licenses/gpl.html)
+Database under ODbL (http://opendatacommons.org/licenses/odbl/)
+
 
 Karthik Murugan | karthik@yemkay.com | http://yemkay.com | @yemkay

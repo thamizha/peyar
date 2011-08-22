@@ -162,7 +162,9 @@
                                         
                                         <?=lang('Made by Karthik, Ravisanker')?>
                                         <br/><br/>
-                                        <?=lang('Code & Database to be opensourced soon!!')?>
+					<a href="http://www.thamizha.com/"><img width="24" src="/images/dispatch_logo.png"><?=lang('Its a Thamizha project')?></a>
+                                        <br/><br/>
+                                        <a href="https://github.com/thamizha/peyar"><?=lang('Code is released under GPL3 license')?></a>
 
                                     </div>
                                     

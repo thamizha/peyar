@@ -20,6 +20,7 @@ $lang['Links'] = "தொடுப்புகள்";
 $lang['About Us'] = "எங்களைப் பற்றி";
 $lang['Influence of other languages in tamil names'] = "தமிழர் பெயர்களில் பிற மொழித் தாக்கம்";
 $lang['Made by Karthik, Ravisanker'] = 'ஆக்கம்: <a href="http://yemkay.com">கார்த்திக்</a><br/>ஊக்கம்: <a href="http://blog.ravidreams.net">ரவிசங்கர்</a>';
+$lang['Its a Thamizha project'] = 'இது ஒரு தமிழா திட்டம்';
 $lang['Search results of boy names containing "%s"'] = "\"%s\" உள்ள ஆண் பெயர்கள்";
 $lang['Search results of girl names containing "%s"'] = "\"%s\" உள்ள பெண் பெயர்கள்";;
 
